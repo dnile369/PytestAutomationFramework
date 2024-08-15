@@ -3,6 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
 import openpyxl
 
+
 class Yahoo_Finance:
     def __init__(self, driver):
         self.driver = driver
@@ -66,4 +67,3 @@ class Yahoo_Finance:
         req_df = pd.DataFrame(req_dict)
         req_df.to_excel("C:\\Users\\niles\\PycharmProjects\\Stock_Information\\Reports\\info.xlsx", index=False)
         req_df.to_csv("C:\\Users\\niles\\PycharmProjects\\Stock_Information\\Reports\\info.csv", index=False)
-

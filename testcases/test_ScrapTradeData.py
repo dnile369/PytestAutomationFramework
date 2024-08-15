@@ -14,9 +14,7 @@ class Test_001_info:
         self.driver.implicitly_wait(5)
         web = nse_website(self.driver)
         web.get_title()
-
         web.get_each_stock_details()
-        time.sleep(60)
 
     @pytest.mark.yahoo
     def test_yahoo_finance(self):
